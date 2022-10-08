@@ -4,10 +4,9 @@ export default {
   themeConfig: {
     sidebar: [
       {
-        text: 'Guide',
+        text: 'Welcome',
         items: [
-          { text: 'Introduction', link: '/index' },
-          { text: 'Getting Started', link: '/getting-started' },
+          { text: 'Введение', link: '/index' },
         ]
       },
       {
@@ -26,7 +25,15 @@ export default {
             items: [
               { text: 'Сборка и установка', link: '/software/python/python' },
             ]
-          }
+          },
+          {
+            text: 'Databases',
+            items: [
+              { text: 'Postgresql', link: '/software/databases/postgresql' },
+              { text: 'Oracle', link: '/software/databases/oracle' },
+            ]
+          },
+          { text: 'Cloudera', link: '/software/cloudera.md'}
         ]
       }
     ]
