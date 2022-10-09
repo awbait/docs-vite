@@ -1,7 +1,7 @@
 export default {
   title: 'DODocs by awbait',
   description: 'DevOps documentation',
-  base: 'https://docs.awbait.com/',
+  base: '/',
   themeConfig: {
     sidebar: [
       {
