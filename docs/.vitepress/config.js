@@ -42,14 +42,53 @@ function sidebarMain() {
   return [
     {
       text: 'Введение',
-      collapsible: true,
+      collapsible: false,
+      collapsed: false,
       items: [
         { text: 'Общая информация', link: '/devops/info' },
       ]
     },
     {
+      text: 'Linux',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: 'SSH', link: '/devops/linux/ssh' },
+        { text: 'Firewall', link: '/devops/linux/firewall' },
+        { text: 'Commands', link: '/devops/linux/commands' },
+        { text: 'rsyslog', link: '/devops/linux/rsyslog' },
+        {
+          text: 'Customization',
+          items: [
+            { text: 'Customization', link: '/devops/linux/customization/customization' },
+            { text: 'chezmoi', link: '/devops/linux/customization/chezmoi' },
+          ]
+        },
+        {
+          text: 'Storage',
+          items: [
+            { text: 'Resize LVM', link: '/devops/linux/storage/resize-lvm-filesystem' },
+            { text: 'Resize LVM with reboot', link: '/devops/linux/storage/resize-lvm-filesystem2' },
+          ]
+        },
+        {
+          text: 'Install',
+          items: [
+            { text: 'Resize LVM', link: '/devops/linux/storage/resize-lvm-filesystem' },
+          ]
+        },
+        {
+          text: 'Hacks',
+          items: [
+            { text: 'Resize LVM', link: '/devops/linux/storage/resize-lvm-filesystem' },
+          ]
+        },
+      ]
+    },
+    {
       text: 'Software',
       collapsible: true,
+      collapsed: true,
       items: [
         { text: 'Python', link: '/devops/software/python/python' },
         {
