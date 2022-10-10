@@ -1,4 +1,5 @@
 node_modules/
 
 docs/.obsidian
+docs/TODO*
 .vscode/
