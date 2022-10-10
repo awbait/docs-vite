@@ -21,7 +21,7 @@ sda               8:0    0   10G  0 disk
 ls /sys/class/scsi_device/
 ```
 Получаем:
-```console
+```
 0:0:0:0  3:0:0:0
 ```
 Необходимо просканировать шину SCSI (можно заменить значение 0:0:0:0, слеши обязательны):
@@ -43,11 +43,11 @@ sda               8:0    0   30G  0 disk
 growpart /dev/sda 2
 ```
 Получаем:
-```console
+```
 CHANGED: partition=2 start=2099200 old: size=18872320 end=20971520 new: size=60815327 end=62914527
 ```
 Проверяем:
-```console
+```
 [root@test-bi opt]# lsblk
 NAME            MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda               8:0    0   30G  0 disk
