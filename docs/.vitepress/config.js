@@ -46,6 +46,7 @@ function sidebarMain() {
       collapsed: false,
       items: [
         { text: 'Общая информация', link: '/devops/info' },
+        { text: 'Приложения и сервисы', link: '/devops/apps-and-services' },
       ]
     },
     {
@@ -88,6 +89,49 @@ function sidebarMain() {
       ]
     },
     {
+      text: 'Kubernetes',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        {
+          text: 'Charts',
+          items: [
+            { text: 'Airflow', link: '/devops/kubernetes/charts/airflow' },
+            { text: 'Camunda BPM', link: '/devops/kubernetes/charts/camunda-bpm' },
+            { text: 'EFK', link: '/devops/kubernetes/charts/efk' },
+            { text: 'External ingress', link: '/devops/kubernetes/charts/external-nginx-ingress' },
+            { text: 'Metallb', link: '/devops/kubernetes/charts/metallb' },
+            { text: 'Postgresql', link: '/devops/kubernetes/charts/postgresql' },
+          ]
+        },
+        {
+          text: 'Configs',
+          items: [
+            { text: 'Bare-metall cluster', link: '/devops/kubernetes/configs/bare-metall-k8s-cluster' },
+            { text: 'Cert manager', link: '/devops/kubernetes/configs/cert-manager' },
+            { text: 'Fluentd', link: '/devops/kubernetes/configs/fluentd' },
+            { text: 'Local path provisioner', link: '/devops/kubernetes/configs/local-path-provisioner' },
+            { text: 'Longhorn', link: '/devops/kubernetes/configs/longhorn' },
+            { text: 'Rancher', link: '/devops/kubernetes/configs/rancher' },
+          ]
+        },
+        {
+          text: 'Hacks',
+          items: [
+            { text: 'Traefik-stripprefix', link: '/devops/kubernetes/hacks/traefik-stripprefix' },
+          ]
+        },
+        {
+          text: 'Tools',
+          items: [
+            { text: 'k3sup', link: '/devops/kubernetes/tools/k3sup' },
+          ]
+        },
+        { text: 'Commands', link: '/devops/kubernetes/commands' },
+        { text: 'Components', link: '/devops/kubernetes/components' },
+      ]
+    },
+    {
       text: 'Software',
       collapsible: true,
       collapsed: true,
@@ -100,10 +144,20 @@ function sidebarMain() {
           items: [
             { text: 'Postgresql', link: '/devops/software/databases/postgresql' },
             { text: 'Oracle', link: '/devops/software/databases/oracle' },
+            { text: 'Ora2pg', link: '/devops/software/databases/ora2pg' },
           ]
         },
         { text: 'Airflow', link: '/devops/software/airflow/airflow' },
         { text: 'Cloudera', link: '/devops/software/cloudera' },
+      ]
+    },
+    {
+      text: 'Other',
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: 'Docker', link: '/devops/other/docker' },
+        { text: 'Nutanix', link: '/devops/other/nutanix' },
       ]
     },
   ]
