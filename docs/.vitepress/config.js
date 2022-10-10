@@ -74,13 +74,15 @@ function sidebarMain() {
         {
           text: 'Install',
           items: [
-            { text: 'Resize LVM', link: '/devops/linux/storage/resize-lvm-filesystem' },
+            { text: 'Jenkins', link: '/devops/linux/install/jenkins' },
+            { text: 'Maven', link: '/devops/linux/install/maven' },
           ]
         },
         {
           text: 'Hacks',
           items: [
-            { text: 'Resize LVM', link: '/devops/linux/storage/resize-lvm-filesystem' },
+            { text: 'Centos 8 Fix Repo', link: '/devops/linux/hacks/centos8-repo-fix' },
+            { text: 'Password reset', link: '/devops/linux/hacks/password-reset' },
           ]
         },
       ]

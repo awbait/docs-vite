@@ -26,6 +26,7 @@ systemctl enable jenkins
 
 Для удобства, чтобы изменить URL интерфейса, открываем конфиг и изменяем строку:
 
-``` bash title="/etc/sysconfig/jenkins"
+/etc/sysconfig/jenkins
+``` bash
 JENKINS_ARGS="--prefix=/jenkins"
 ```

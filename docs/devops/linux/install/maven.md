@@ -13,7 +13,8 @@ tar xvf apache-maven-3.6.3-bin.tar.gz -C /usr/lib/
 Редактируем файл профиля для присвоения переменных среды:
 
 В конец файла дописываем и сохраняем:
-``` bash title="/etc/profile"
+/etc/profile
+``` bash
 M2_HOME="/usr/lib/apache-maven-3.6.3"
 export M2_HOME
 
