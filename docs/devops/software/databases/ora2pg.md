@@ -66,10 +66,10 @@ make && make install
 export LD_LIBRARY_PATH=/u01/app/oracle/product/12.1.0.2/db_1/lib:/lib:/usr/lib
 export ORACLE_HOME=/u01/app/oracle/product/12.1.0.2/db_1
 perl -MCPAN -e 'install DBD::Oracle'
-
+```
 ora2pg --project_base /opt --init_project migration
 ora2pg -t SHOW_VERSION -c /opt/migration/config/ora2pg.conf
-
+```
 DB = app_jira
 ALTER USER appjira WITH PASSWORD 'DR8KX4Ga74n3';
 ALTER DATABASE app_jira OWNER TO appjira;
