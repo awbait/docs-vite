@@ -144,7 +144,6 @@ function sidebarMain() {
           items: [
             { text: 'Postgresql', link: '/devops/software/databases/postgresql' },
             { text: 'Oracle', link: '/devops/software/databases/oracle' },
-            { text: 'Ora2pg', link: '/devops/software/databases/ora2pg' },
           ]
         },
         { text: 'Airflow', link: '/devops/software/airflow/airflow' },
