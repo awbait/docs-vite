@@ -55,8 +55,6 @@ nohup /opt/ora2pg-23.1/data/jira/import_all.sh -d app_jira -o appjira -U appjira
 ora2pg --init_project app_jira
 nohup ora2pg -j 2 -J 4 -t INSERT -o data.sql -b ./data
 
-------
-
 yum install -y devtoolset-8 perl-CPAN perl-DBD-Pg libaio perl-Test-Simple perl-Test-NoWarnings
 
 tar -xvzf v23.1.tar.gz
@@ -114,11 +112,6 @@ nohup ora2pg -j 2 -J 12 -t COPY -o data.sql -b ./data -c ./config/ora2pg.conf
 
 Конфиг
 DROP_FKEY 1
-
-
-
-
-----------------------------------------
 
 
 
