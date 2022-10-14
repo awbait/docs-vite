@@ -1,8 +1,0 @@
-import{_ as a,c as s,o as e,a as n}from"./app.a1c761f2.js";const h=JSON.parse('{"title":"cert-manager","description":"","frontmatter":{},"headers":[],"relativePath":"devops/kubernetes/configs/cert-manager.md","lastUpdated":1665449504000}'),t={name:"devops/kubernetes/configs/cert-manager.md"},c=n(`<h1 id="cert-manager" tabindex="-1">cert-manager <a class="header-anchor" href="#cert-manager" aria-hidden="true">#</a></h1><p>\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0440\u0435\u043F\u043E\u0437\u0438\u0442\u043E\u0440\u0438\u0439:</p><div class="language-bash"><button class="copy"></button><span class="lang">bash</span><pre><code><span class="line"><span style="color:#A6ACCD;">helm repo add jetstack https://charts.jetstack.io</span></span>
-<span class="line"></span></code></pre></div><p>\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430:</p><div class="language-bash"><button class="copy"></button><span class="lang">bash</span><pre><code><span class="line"><span style="color:#A6ACCD;">helm install \\</span></span>
-<span class="line"><span style="color:#A6ACCD;">  cert-manager jetstack/cert-manager \\</span></span>
-<span class="line"><span style="color:#A6ACCD;">  --namespace cert-manager \\</span></span>
-<span class="line"><span style="color:#A6ACCD;">  --create-namespace \\</span></span>
-<span class="line"><span style="color:#A6ACCD;">  --version v1.7.1 \\</span></span>
-<span class="line"><span style="color:#A6ACCD;">  --set installCRDs=true</span></span>
-<span class="line"></span></code></pre></div>`,5),p=[c];function r(l,o,i,d,_,m){return e(),s("div",null,p)}const A=a(t,[["render",r]]);export{h as __pageData,A as default};
